@@ -56,12 +56,12 @@ class UltraMagicString(object):
 
 
 if sys.version_info[0] >= 3:
-    long_description = u'\n\n'.join((
+    long_description = '\n\n'.join((
         readfile(README_PATH),
         readfile(CHANGES_PATH),
     ))
 else:
-    long_description = u'\n\n'.join((
+    long_description = '\n\n'.join((
         readfile(README_PATH).decode('utf-8'),
         readfile(CHANGES_PATH).decode('utf-8'),
     ))
@@ -74,7 +74,7 @@ setup(
     version=get_version('django_mobile'),
     url='https://github.com/gregmuellegger/django-mobile',
     license='BSD',
-    description=u'Detect mobile browsers and serve different template flavours to them.',
+    description='Detect mobile browsers and serve different template flavours to them.',
     long_description=long_description,
     author=get_author('django_mobile'),
     author_email='gregor@muellegger.de',

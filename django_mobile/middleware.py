@@ -35,12 +35,12 @@ class MobileDetectionMiddleware(MiddlewareMixin):
         "symb", "t-mo", "teli", "tim-", "tosh", "tsm-",
         "upg1", "upsi", "vk-v", "voda", "wap-", "wapa",
         "wapi", "wapp", "wapr", "webc", "winw", "xda-",)
-    user_agents_test_search = u"(?:%s)" % u'|'.join((
+    user_agents_test_search = "(?:%s)" % '|'.join((
         'up.browser', 'up.link', 'mmp', 'symbian', 'smartphone', 'midp',
         'wap', 'phone', 'windows ce', 'pda', 'mobile', 'mini', 'palm',
         'netfront', 'opera mobi',
     ))
-    user_agents_exception_search = u"(?:%s)" % u'|'.join((
+    user_agents_exception_search = "(?:%s)" % '|'.join((
         'ipad',
     ))
     http_accept_regex = re.compile("application/vnd\.wap\.xhtml\+xml", re.IGNORECASE)
